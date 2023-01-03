@@ -9,6 +9,11 @@ go get -u github.com/pcordeiro/go-health-sqldb
 
 In the code:
 ```go
+import(
+   	"github.com/pcordeiro/go-health"
+	health_sqldb "github.com/pcordeiro/go-health-sqldb"
+)
+
 health, err := health.NewHealth(
     health.WithComponent(
         health.Component{
