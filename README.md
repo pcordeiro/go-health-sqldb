@@ -10,6 +10,8 @@ go get -u github.com/pcordeiro/go-health-sqldb
 In the code:
 ```go
 import(
+    _ "github.com/denisenkom/go-mssqldb" // the sql database driver for the database health check
+
    	"github.com/pcordeiro/go-health"
 	health_sqldb "github.com/pcordeiro/go-health-sqldb"
 )
